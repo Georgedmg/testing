@@ -1,0 +1,175 @@
+/* Base styles */
+/* Typography, colors etc */
+/* font-family: ''; */
+
+/* Header styles */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .menu-toggle-icon { display: none;}
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+header {
+    height: 300px;
+    background-image: url("../images/fw_about_hd_bkg.png");
+    
+;
+}
+
+header .logo {
+    width: 25%;
+    float:left;
+}
+
+header .logo img {
+    width: 100%;
+    max-width: 150px; 
+}
+
+header h1 {
+    margin-top: 120px; 
+    clear: both;
+    color: white;
+    font-size:34px;
+    text-align:center;
+}
+
+header h2 {
+    clear: both;
+    color: lightblue;
+    font-size:22px;
+    text-align:center;
+}
+
+footer.logo{
+    width: 25%;
+    float:left;
+}
+
+footer .logo2 img {
+    width: 200px;
+    position: relative;
+    top: 15px;
+    right: 15px; 
+}
+
+footer{
+    height:310px;
+    padding: 30px 0 25px 0;
+    background-color: #0846b9;
+}
+
+footer .footermenu ul{
+    float:right;
+}
+
+footer .footermenu ul li{
+    position: relative;
+    top:34px;
+    right: 170px;
+    float:left;
+    display: inline-table;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+@media screen and (max-width: 600px) {
+   
+    .topnav { display: none; }
+    .menu-toggle-icon {
+        display: block;
+        z-index: 2;
+        float: right;
+        position: relative;
+    }
+    .menu-toggle-icon > i.fa {
+        font-size: 35px;
+    }
+
+    .topnav.open {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .topnav.open a {
+        display: block;
+        width: 100%;
+        padding: 2px 5px;
+        text-align: center;
+    }
+    
+  }
+
+footer .footermenu ul li:hover{
+    color: red;
+}
+
+
+
+footer .phone ul{
+    position: relative;
+    left: 190px;
+    top: 50px;
+    font-family: 'Roboto', sans-serif;
+    clear: both;
+    list-style:none;
+    display: inline-table;
+    color:#598993;
+    text-align: left;
+}
+
+footer .address ul{
+    position: relative;
+    left: 110px;
+    top: 50px;
+    font-family: 'Roboto', sans-serif;
+    clear: both;
+    list-style:none;
+    display: inline-table;
+    color:#598993;
+    text-align: left;
+}
+
+footer .fbtwitter ul{
+    color:#598993;
+    float: right;
+    position: relative;
+    right:70px;
+    bottom:15px;
+    list-style: none;
+}
+
+footer .fbtwitter ul li{
+    float:left;
+}
+/* Footer styles */
